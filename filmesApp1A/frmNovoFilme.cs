@@ -43,7 +43,7 @@ namespace filmesApp1A
                 novo.AnoLancamento = (int)numAno.Value;
                 this.db.Filme.Add(novo);
                 this.db.SaveChanges();
-                MessageBox.Show("Sucesso");
+                MessageBox.Show("Foi, Oh glória");
                 this.Close();
             }
         }

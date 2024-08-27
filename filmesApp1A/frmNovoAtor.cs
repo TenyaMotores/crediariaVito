@@ -19,17 +19,17 @@ namespace filmesApp1A
             InitializeComponent();
         }
 
-        private void frmNovoAtor_Load(object sender, EventArgs e)
-        {
-            this.db = new Contexto();
-            List<Pais> paises = this.db.Pais.ToList();
-            cbxNacionalidade.DataSource = paises;
-        }
-
         private void frmNovoAtor_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.db.Dispose();
         }
+
+        private void frmNovoAtor_Load(object sender, EventArgs e)
+                {
+                    this.db = new Contexto();
+                    List<Pais> paises = this.db.Pais.ToList();
+                    cbxNacionalidade.DataSource = paises;
+                }
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
@@ -42,7 +42,7 @@ namespace filmesApp1A
                     ).First();
                 this.db.Ator.Add(novo);
                 this.db.SaveChanges();
-                MessageBox.Show("Sucesso");
+                MessageBox.Show("Sucesso 👌👌");
                 this.Close();
             }
         }

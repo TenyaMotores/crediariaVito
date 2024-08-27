@@ -11,15 +11,15 @@ namespace filmesApp1A
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmAtores f = new frmAtores(this);
-            f.Show();
+            frmAtores act = new frmAtores(this);
+            act.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmFilmes f = new frmFilmes(this);
-            f.Show();
+            frmFilmes act = new frmFilmes(this);
+            act.Show();
             this.Hide();   
         }
     }
