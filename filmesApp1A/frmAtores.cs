@@ -39,7 +39,7 @@ namespace filmesApp1A
         {
             this.db = new Contexto();
             this.db.Database.EnsureCreated(); // só pra garantir
-            Recarregar("");
+            Recarregar("");//jeferson caminhoneiras UwU
         }
 
         private void btAdicionar_Click(object sender, EventArgs e)
